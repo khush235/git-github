@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="text">Hello World!</p>
+
+  <!----<button onclick = "alert('Hi!')"> click Me!</button> -->
+    <button id ="myButton">Change text</button>
+
+    <p id="secondParagraph">Javascript is ... </p>
+    <button id ="secondButton">Append text</button>
+
+    <p id="emptyParagraph"></p>
+    <button id ="createParagraph">Create Text</button>
+
+    <p id ="moreText"> This is some Text</p>
+    <button id = "styleText">Style Text</button>
+
+    <script type = "text/javascript">
+      //  alert('Page Is loaded!')
+        /*...multi line ..*/
+
+      //  document.getElementById("text").innerHTML = "Hello Rob!";
+        document.getElementById("myButton").onclick = function() {
+
+           // alert("Button Clicked");
+            document.getElementById("text").innerHTML = "Hello Khushil";
+        }
+        document.getElementById("secondButton").onclick = function() {
+       // document.getElementById("secondParagraph").innerHTML = "Hello Khushil";
+       document.getElementById("secondParagraph").innerHTML = "I think .." + document.getElementById("secondParagraph").innerHTML + "awsome.!";
+        }
+       document.getElementById("createParagraph").onclick = function() {
+        document.getElementById("emptyParagraph").innerHTML = "<h1>Hi There.!<h1>";
+       }
+       
+       document.getElementById("styleText").onclick = function() {
+           document.getElementById("moreText").style.color = "red";
+           document.getElementById("moreText").style.fontSize = "50px";
+        
+       } 
+    </script>
+
+</body>
+</html>
